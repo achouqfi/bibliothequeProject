@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <link rel="stylesheet" href="./css/main.css" />
+
+</head>
+<body>
+    <!--  navbar  -->
+
+      <nav>
+        <div class="logo">
+            <h2>BIBLIO</h2>
+        </div>
+        <div class="openMenu">
+            <img src="/icon/menu.svg" alt="menu" height="40px" style="fill: white;">
+        </div>
+        <ul class="mainMenu">
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/gallery.html">GALERY</a></li>
+            <li><a href="/authors.html">AUTHORS</a></li>
+            <li><a href="/books.html">BOOKS</a></li>
+            <div class="closeMenu" >
+                <img src="/icon/cancel (1).png" alt="close" height="30px">
+            </div>
+            <span class="icons">
+                <i> <img src="/icon/facebook.png" alt="facebook"></i>
+                <i > <img src="/icon/instagram.png" alt="instagram"></i>
+                <i ><img src="/icon/linkedin.png" alt="linkedin"></i>
+                <i><img src="/icon/Twitter.png" alt="Twitter"></i>
+            </span>
+        </ul>
+    </nav>
+
+    <!--  authors page  -->
+    
+    <main class="authors">
+      <div class="separation">
+          <h1>Authors</h1>
+      </div>
+
+      <form class="form" >
+        <div class="form-fild">
+          <label for="full_name">Full name</label>
+          <input type="text" placeholder="Full name" name="name" />
+        </div>
+      <form class="form">
+        <div class="form-fild">
+            <div class="file">
+                Chose File...<input type="file" placeholder="Full name" id="photo" name="photo" />
+            </div>
+        </div>
+        <div class="form-fild">
+          <label for="birthday">Birthday</label>
+          <input type="date" placeholder="Birthday" id="birthday" name="date_de_naissance" />
+        </div>
+        <button class="Btnfitre" name="submit"> Add </button>
+      </form>
+
+      <div class="table">
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Image</th>
+                <th>Full Name</th>
+                <th>Birthday</th>
+                <th>Actions</th>
+            </tr>
+        </table>
+      </div>
+    </main>
+
+    <!--  footer   -->
+
+    <div class="footer">
+        <div class="footer-con">
+          <div class="icon-sm">
+            <div class="sm">
+                <h3>Restons connectés </h3>
+            </div>
+            <ul class="icon">
+                <li> <a href="#"><img src="/icon/facebook.png"></a></li>
+                <li> <a href="#"><img src="/icon/instagram.png"></a></li>
+                <li> <a href="#"><img src="/icon/linkedin.png"></a></li>
+                <li> <a href="#"><img src="/icon/Twitter.png"></a></li>
+            </ul>
+          </div>
+          <div class="espace-mail">
+            <div class="titre">
+                <h3>Souscrire à notre Newsletter</h3>
+            </div>
+            <div class="New">
+            <input class="Newsletter" placeholder="Saisir votre email" type="Saisir votre email">
+            <button class="Subscribe">Envoyer</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  
+
+      <script src="/js/nav.js"></script>
+</body>
+</html>

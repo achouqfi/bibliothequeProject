@@ -1,0 +1,261 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #FF3A08;
+  color: #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mainMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding-right: 3%;
+}
+
+.mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  color: #f3f3f3;
+  font-size: 1.5rem;
+}
+
+.mainMenu li a:hover {
+  background: #F2CA66;
+}
+
+.openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+.mainMenu .closeMenu, .icons i {
+  font-size: 2rem;
+  display: none;
+}
+
+.logo {
+  margin: 6px;
+  font-size: 24px;
+}
+
+@media (max-width: 800px) {
+  nav .mainMenu {
+    height: 100vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #FF3A08;
+    display: none;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    top: 20px;
+    right: 20px;
+  }
+  nav .openMenu {
+    display: block;
+  }
+  nav .mainMenu li a:hover {
+    background: none;
+    color: #F2CA66;
+    font-size: 1.6rem;
+  }
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 8%;
+}
+
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  background-color: #f3f3f3;
+}
+
+th:hover {
+  background-color: #ddd;
+}
+
+label {
+  font-size: large;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+textarea {
+  height: 90px;
+  width: 250px;
+}
+
+.Btns {
+  background-color: #FF3A08;
+  border-color: #FF3A08;
+  color: white;
+  width: 120px;
+  height: 30px;
+  border-radius: 4px;
+  font-size: large;
+}
+
+.forme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 5%;
+  margin-bottom: 4%;
+  margin-right: 5%;
+}
+
+.separation {
+  background-color: #FF3A08;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  height: 5%;
+  border-radius: 5px;
+  text-align: center;
+  color: #f3f3f3;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 4%;
+}
+
+.Btnfitre {
+  background-color: #FF3A08;
+  border-color: #FF3A08;
+  color: white;
+  width: 70px;
+  height: 30px;
+  border-radius: 4px;
+  font-size: large;
+}
+
+.gallery-images {
+  background-color: #FF3A08;
+  height: 340px;
+  width: 180px;
+  margin-left: 3%;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  margin-bottom: 4%;
+}
+
+.card img {
+  height: 250px;
+  width: 170px;
+  margin-left: 3%;
+}
+
+.text h2 {
+  color: #f3f3f3;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.prix {
+  color: white;
+  font-size: medium;
+}
+
+.author a {
+  margin-top: 20%;
+  text-decoration: none;
+  color: #f3f3f3;
+}
+
+.titre-home {
+  background-color: whitesmoke;
+}
+
+.img-1 img {
+  position: relative;
+  width: 100%;
+}
+
+.titre-home h2 {
+  position: absolute;
+  font-size: xx-large;
+  color: #f7f7f7;
+  top: 35%;
+  left: 3%;
+}
+
+.titre-home .AM {
+  background-color: #F2CA66;
+  text-align: center;
+}
+
+.description {
+  background-color: #FF3A08;
+  color: whitesmoke;
+  font-size: small;
+  text-align: center;
+  width: 85%;
+  margin-left: 8%;
+  padding-bottom: 2%;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  -webkit-box-shadow: #FF3A08 solid 1px;
+          box-shadow: #FF3A08 solid 1px;
+  margin-bottom: 7%;
+  margin-top: -1%;
+}
+
+.text {
+  padding-top: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+/*# sourceMappingURL=main.css.map */

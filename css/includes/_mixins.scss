@@ -1,0 +1,29 @@
+@mixin overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    @content;
+}
+
+@mixin psudo {
+    content: '';
+    position: absolute;
+    display: block;
+    @content;
+}
+
+@mixin mq($size) {
+    @media screen and (min-width: $size) {
+        @content;
+    }
+}
+
+@mixin calcWidth($elmCount: 2, $margin: 1%) {
+    $parentWidth: 100%;
+    width: $parentWidth / $elmCount - $margin * 2;
+    margin: {
+        left: $margin; 
+        right: $margin; 
+    };
+}

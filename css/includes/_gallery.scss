@@ -1,0 +1,62 @@
+.separation{
+    background-color:$background;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 5%;
+    border-radius: 5px;
+    text-align: center;
+    color: $main_color;
+}
+
+.form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    flex-wrap: wrap;
+    margin-bottom: 4%; 
+}
+
+.Btnfitre{
+    background-color: $background;
+    border-color: $background;
+    color: white;
+    width: 70px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: large;
+}
+
+
+.gallery-images{
+    background-color: $background;
+    height: 340px;
+    width: 180px;
+    margin-left: 3%;
+    border-bottom-right-radius:8px;
+    border-bottom-left-radius:8px;
+    margin-bottom: 4%;
+}
+
+.card img{
+    height: 250px;
+    width: 170px;
+    margin-left: 3%;
+}
+
+.text h2{
+    color: $main_color;
+    align-items: center;
+}
+.prix{
+    color: white;
+    font-size: medium;
+}
+.author a{
+    margin-top: 20%;
+    text-decoration: none;
+    color: $main_color;
+}

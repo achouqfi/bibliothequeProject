@@ -1,0 +1,47 @@
+.footer-con{
+    background-color: $background ;
+    margin-top: 10%;
+}
+
+.icon{
+    display: flex;
+    margin-left: 25%;
+    list-style: none ;
+    padding-top: 4%;
+    margin-bottom: 8%;
+}
+
+.icon li{
+    padding-left: 4%;
+}
+
+.sm{
+    color: white;
+    padding-top: 5%;
+    text-align: center;
+    font-size: large;
+}
+
+.New{
+    display: flex;
+    padding-top: 4%;
+    margin-left: 8%;
+    padding-bottom: 7%;
+}
+
+.Newsletter{
+    background-color: $background;
+    height: 34px;
+    width: 75%;
+}
+
+.titre{
+    color: white;
+    text-align: center; 
+    font-size: large;  
+}
+
+.Subscribe{
+    background-color: white;
+    width: 80px;
+}

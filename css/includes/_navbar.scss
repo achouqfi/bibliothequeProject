@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: $background;
+    color: $main_color;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.mainMenu {
+    display: flex;
+    list-style: none;
+    padding-right: 3%;
+}
+
+.mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: $main_color;
+    font-size: 1.5rem;
+}
+.mainMenu li a:hover {
+    background: $dark_color;
+}
+.openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+.mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+}
+
+.logo {
+    margin: 6px;
+    font-size: 24px;
+}
+
+@media(max-width: 800px){
+    nav .mainMenu {
+        height: 100vh;
+        top: 0;
+        right: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        background-color: $background;
+        display: none;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        top: 20px;
+        right: 20px;
+
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .mainMenu li a:hover {
+        background: none;
+        color: $dark_color;
+        font-size: 1.6rem;
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}

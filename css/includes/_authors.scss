@@ -1,0 +1,26 @@
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 8%;
+}
+
+th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    background-color: $main_color ;
+}
+
+th:hover {
+    background-color: #ddd;
+}
+
+label{
+    font-size: large;
+
+}
+
+body{
+    background-color: whitesmoke;
+}
+

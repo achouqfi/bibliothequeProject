@@ -1,0 +1,46 @@
+
+.titre-home{
+    background-color: whitesmoke;
+}
+
+.img-1 img{
+    position: relative;
+    width: 100%;
+
+}
+.titre-home h2{
+    position: absolute;
+    font-size: xx-large;
+    color: rgb(247, 247, 247);
+    top: 35%;
+    left: 3%;
+}
+
+.titre-home .AM{
+    background-color: $dark_color;
+    text-align: center;
+}
+
+.description{
+    background-color: $background;
+    color: whitesmoke;
+    font-size: small;
+    text-align: center;
+    width: 85%;
+    margin-left: 8%;
+    padding-bottom: 2%;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    box-shadow: $background solid 1px;
+    margin-bottom: 7%;
+    margin-top: -1%;
+}
+
+.text{
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;    
+}
+
+
+
