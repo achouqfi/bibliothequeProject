@@ -1,0 +1,62 @@
+
+
+
+@media screen and (max-width: 600px){
+    .footer-con{
+        background-color: rgb(128, 74, 74) ;
+        margin-top: 10%;
+       
+    }
+    .footer{
+     display: flex;
+    }
+    .icon{
+        display: flex;
+        margin-left: 25%;
+        list-style: none ;
+        padding-top: 4%;
+        margin-bottom: 8%;
+    }
+    .icon-sm{
+        display: flex;
+    }
+    .icon li{
+        padding-left: 4%;
+    }
+    
+    .sm{
+        color: white;
+        padding-top: 5%;
+        text-align: center;
+        font-size: large;
+    }
+    
+    .New{
+        display: flex;
+        padding-top: 4%;
+        margin-left: 8%;
+        padding-bottom: 7%;
+    }
+    
+    .Newsletter{
+        
+        background-color:whitesmoke;
+        height: 34px;
+        width: 75%;
+        
+    }
+    
+    .titre{
+        color: white;
+        text-align: center; 
+        font-size: large;  
+    }
+    
+    .Subscribe{
+        background-color: white;
+        width: 80px;
+    }
+}
+
+
+

@@ -24,6 +24,14 @@ nav {
   padding-right: 3%;
 }
 
+.mainMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding-right: 3%;
+}
+
 .mainMenu li a {
   display: inline-block;
   padding: 15px;
@@ -38,7 +46,8 @@ nav {
 
 .openMenu {
   font-size: 2rem;
-  margin: 20px;
+  margin-right: 8px;
+  margin-top: 5px;
   display: none;
   cursor: pointer;
 }
@@ -54,22 +63,37 @@ nav {
 }
 
 @media (max-width: 800px) {
-  nav .mainMenu {
-    height: 100vh;
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .mainMenu {
+    height: 100%;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
+    z-index: 10;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #FF3A08;
+    background: #FF3A08;
+    -webkit-transition: top 1s ease;
+    transition: top 1s ease;
     display: none;
   }
   nav .mainMenu .closeMenu {
     display: block;
+    position: absolute;
     top: 20px;
     right: 20px;
   }
@@ -78,7 +102,7 @@ nav {
   }
   nav .mainMenu li a:hover {
     background: none;
-    color: #F2CA66;
+    color: #ff7b00;
     font-size: 1.6rem;
   }
   .icons i {
@@ -100,7 +124,13 @@ th {
   background-color: #f3f3f3;
 }
 
-th:hover {
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  background-color: #f3f3f3;
+}
+
+td:hover {
   background-color: #ddd;
 }
 
@@ -110,6 +140,27 @@ label {
 
 body {
   background-color: whitesmoke;
+}
+
+.btnd {
+  background-color: #FF3A08;
+  border-color: #FF3A08;
+  color: white;
+  text-decoration: none;
+  width: 130px;
+  height: 30px;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-left: 20%;
+  border-radius: 4px;
+  font-size: large;
+  text-align: center;
+}
+
+.edit {
+  background-color: #F2CA66;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 textarea {
@@ -140,6 +191,13 @@ textarea {
   margin-left: 5%;
   margin-bottom: 4%;
   margin-right: 5%;
+}
+
+select {
+  width: 150px;
+  background-color: whitesmoke;
+  border-radius: 4px;
+  color: black;
 }
 
 .separation {
@@ -226,9 +284,9 @@ textarea {
 
 .titre-home h2 {
   position: absolute;
-  font-size: xx-large;
+  font-size: 40px;
   color: #f7f7f7;
-  top: 35%;
+  top: 45%;
   left: 3%;
 }
 
@@ -257,5 +315,19 @@ textarea {
   padding-top: 2%;
   padding-left: 2%;
   padding-right: 2%;
+}
+
+@media only screen and (max-width: 900px) {
+  .titre-home h2 {
+    font-size: x-large;
+    top: 20%;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  .titre-home h2 {
+    font-size: xx-large;
+    top: 25%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

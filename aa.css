@@ -1,0 +1,90 @@
+.footer-con{
+    background-color: red;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 4%;
+
+}
+
+.icon{
+    display: flex;
+    margin-left: 10%;
+    list-style: none ;
+    padding-top: 4%;
+    margin-bottom: 8%;
+}
+    
+.icon li{
+    padding-left: 10%;
+}
+
+.sm{
+    color: white;
+    margin-left: 40%;
+    padding-top: 15%;
+    font-size: large;
+    width: 100%;
+}
+
+.New{
+    display: flex;
+    padding-top: 4%;
+    padding-bottom: 7%;
+}
+
+.Subscribe{
+    background-color: rgb(248, 203, 0);
+    width: 110px;
+}
+
+.Newsletter{
+    background-color: white;
+    height: 30px;
+    width: 100%;
+}
+
+.titre{
+    color: white;
+    padding-top: 12%;
+    font-size: large;
+}
+
+
+
+@media only screen  and (max-width: 700px){
+    .footer-con{
+        display: block;
+        background-color: red;
+        margin-top: 20%;
+    }
+    .icon li{
+        padding-left: 4%;
+    }
+    .icon{
+        display: flex;
+        margin-left: 22%;
+        list-style: none ;
+        padding-top: 4%;
+        margin-bottom: 2%;
+    }
+    .sm{
+        color: white;
+        margin-left: 30%;
+        padding-top: 5%;
+        font-size: large;
+        width: 100%;
+    }
+
+    .titre{
+        color: white;
+        font-size: large;
+        padding-left: 10%;
+    }
+       
+}
+
+

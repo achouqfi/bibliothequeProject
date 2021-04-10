@@ -5,13 +5,19 @@ table {
     margin-bottom: 8%;
 }
 
-th {
+th{
     border: 1px solid #ddd;
     padding: 8px;
     background-color: $main_color ;
 }
 
-th:hover {
+td{
+    border: 1px solid #ddd;
+    padding: 8px;
+    background-color: $main_color ;
+}
+
+td:hover {
     background-color: #ddd;
 }
 
@@ -22,5 +28,25 @@ label{
 
 body{
     background-color: whitesmoke;
+}
+
+.btnd {
+    background-color: $background;
+    border-color: $background;
+    color: white;
+    text-decoration: none;
+    width: 130px;
+    height: 30px;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-left: 20%;
+    border-radius: 4px;
+    font-size: large;
+    text-align: center;
+}
+.edit{
+    background-color: $dark_color;
+    margin-left: 5%;
+    margin-right: 5%;   
 }
 
