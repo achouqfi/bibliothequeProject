@@ -47,31 +47,31 @@
         </ul>
     </nav>
     <main class="books">
-            <div class="separation">
-                <h1>Books</h1>
-            </div>
-            <section class="edit">
-                    <form  class="form" action="eProcessAuthors.php" method="Post" enctype="multipart/form-data">
-                        <input type="hidden" value ="<?php echo $row['id'];?>" name="id">
-                        <div class="form-fild">
-                            <label for="">Name</label>
-                            <input type="name" value ="<?php echo $row['name'];?>" name="name">
+    <div class="separation">
+        <h1>EDIT AUTEUR</h1>
+    </div>
+    <div class="edit">
+            <form  class="form" action="eProcessAuthors.php" method="Post" enctype="multipart/form-data">
+                <input type="hidden" value ="<?php echo $row['id'];?>" name="id">
+                <div class="form-fild">
+                    <label for="">Name</label>
+                    <input type="name" value ="<?php echo $row['name'];?>" name="name">
+                </div>
+                <div class="form-fild">
+                    <label for="">Date de naissance</label>
+                    <input type="date" value ="<?php echo $row['DDN'];?>" name="date_de_naissance">
+                </div>
+                <div class="form-fild">
+                    <div class="file">
+                        <div class="placeholder">
+                            choisir le fichier 
                         </div>
-                        <div class="form-fild">
-                            <label for="">Date de naissance</label>
-                            <input type="date" value ="<?php echo $row['DDN'];?>" name="date_de_naissance">
-                        </div>
-                        <div class="form-fild">
-                                <div class="file">
-                                    <div class="placeholder">
-                                        choisir le fichier 
-                                    </div>
-                                    <input type="file" value="<?php echo "<img src='image/".$row['photo']."'>";?>" name="photo">
-                                </div>
-                            </div>
-                        <button class="Btnfitre" type="submit" name="update">actualiser</button>
-                    </form>    
-            </section>
+                        <input type="file" value="<?php echo "<img src='image/".$row['photo']."'>";?>" name="photo">
+                    </div>
+                </div>
+                <button class="Btnfitre" type="submit" name="update">actualise</button>
+            </form>    
+        </div>
 
 </body>
 </html>

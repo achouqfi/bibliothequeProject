@@ -45,9 +45,9 @@
             <h1>GALLERIE</h1>
          </div>
          <form class="form" id="filter">
-            <label for="author">Auteur :  </label>
             <select name="auteur" id="auteur">
-              <option selected disabled>select an author</option>
+               <label for="name">auteur:</label>
+              <option selected disabled>choisirr</option>
                <?php
                   while($row=$result->fetch(PDO::FETCH_ASSOC)) {
                       extract($row);
@@ -58,17 +58,16 @@
                <?php } ?>
             </select>
             <div class="form-fild">
-               <label for="min_prix">Prix Min: </label>
-               <input id="min" name="min_prix" type="number"/>
+               <label for="min_prix">Prix Min : </label>
+               <input min="0" id="min" name="min_prix" type="number"/>
             </div>
             <div class="form-fild">
                <label for="max_prix">Prix Max :  </label>
-               <input id="max" type="number" name="max_prix"/>
+               <input min="0" id="max" type="number" name="max_prix"/>
             </div>
-            <button class="Btnfitre">cherche</button>
          </form>
 
-         <div style="display:flex">
+         <div class="gallerie">
             <?php
                $result1=$connectdb->query('SELECT * FROM livre');
                $result->execute();
@@ -96,6 +95,8 @@
                ?> 
          </div>
       </div>
+
+
       <!--  footer   -->
       <div class="footer">
          <div class="footer-con">

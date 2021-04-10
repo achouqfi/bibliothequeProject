@@ -31,6 +31,7 @@
 }
 
 
+
 .gallery-images{
     background-color: $background;
     height: 340px;
@@ -39,6 +40,17 @@
     border-bottom-right-radius:8px;
     border-bottom-left-radius:8px;
     margin-bottom: 4%;
+}
+
+.gallerie{
+    display: flex;
+    background-color: whitesmoke;
+    overflow: scroll;
+}
+
+.gallerie::-webkit-scrollbar {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 .card img{

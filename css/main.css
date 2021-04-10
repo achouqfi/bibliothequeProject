@@ -157,12 +157,6 @@ body {
   text-align: center;
 }
 
-.edit {
-  background-color: #F2CA66;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
 textarea {
   height: 90px;
   width: 250px;
@@ -247,6 +241,19 @@ select {
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
   margin-bottom: 4%;
+}
+
+.gallerie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: whitesmoke;
+  overflow: scroll;
+}
+
+.gallerie::-webkit-scrollbar {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .card img {

@@ -48,7 +48,7 @@ $result->execute();
     <!--  books page  -->
     <main class="books">
         <div class="separation">
-            <h1>Books</h1>
+            <h1>LIVRES</h1>
         </div>
         <form  class="forme" action="insertbook.php" method="Post"  enctype="multipart/form-data" >
             <div class="form-fild">

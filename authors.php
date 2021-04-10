@@ -43,7 +43,7 @@
     
     <main class="authors">
       <div class="separation">
-          <h1>EDITE AUTEUR</h1>
+          <h1> AUTEUR</h1>
       </div>
 
       <form class="form" action="insertauthors.php" method="Post" enctype="multipart/form-data" >
@@ -58,11 +58,11 @@
         </div>
         <div class="form-fild">
             <div class="file">
-                Chose File...<input type="file" placeholder="Full name" id="photo" name="photo" />
+                photo: <input type="file" placeholder="Full name" id="photo" name="photo" />
             </div>
         </div>
 
-        <button class="Btnfitre" name="submitt">ajouter </button>
+        <button class="Btnfitre" name="submitt">ajouter</button>
         
       </form>
 

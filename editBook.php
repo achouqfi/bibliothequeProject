@@ -46,9 +46,9 @@
             </div>
         </ul>
     </nav>
-<main class="books">
+    <main class="books">
         <div class="separation">
-            <h1>EDITE LIVRE</h1>
+            <h1>EDIT LIVRE</h1>
         </div>
         <form  class="forme" action="EProcessBooks.php?eid=<?php echo $_GET["did"] ?>" method="Post"  enctype="multipart/form-data" >
             <div class="form-fild">
@@ -82,6 +82,39 @@
             </div>
             <button class="Btns" name="submit">actualiser</button>
         </form>
+    </main>
+    
+    <!--  footer   -->
+
+    <div class="footer" style="margin-top: 30%">
+        <div class="footer-con">
+            <div class="icon-sm">
+                <div class="sm">
+                    <h3>Restons connectés </h3>
+                </div>
+            <ul class="icon">
+                <li> <a href="#"><img src="/crud-brief//icon/facebook.png"></a></li>
+                <li> <a href="#"><img src="/crud-brief//icon/instagram.png"></a></li>
+                <li> <a href="#"><img src="/crud-brief//icon/linkedin.png"></a></li>
+                <li> <a href="#"><img src="/crud-brief//icon/Twitter.png"></a></li>
+            </ul>
+        </div>
+        <div class="espace-mail">
+            <div class="titre">
+                <h3>Souscrire à notre Newsletter</h3>
+            </div>
+            <div class="New">
+                <input class="Newsletter" placeholder="Saisir votre email" type="Saisir votre email">
+                <button class="Subscribe">Envoyer</button>
+            </div>
+        </div>
+    </div>
+
+  
+
+    <script src="/crud-brief/js/nav.js"></script>
+</body>
+</html>
 </body>
 </html>
 
